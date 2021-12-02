@@ -1,6 +1,6 @@
 # On learning material synthesis hierarchies using shape matching on function spaces
 This repository supplements the following papers
->> On learning material synthesis hierarchies using shape matching on function spaces Kiran Vaddi, Huat T Chian and Lilo D Pozzo
+> On learning material synthesis hierarchies using shape matching on function spaces Kiran Vaddi, Huat T Chiang and Lilo D Pozzo
 
 We recommend installing the package in a editable format using the `install.sh` file in a Linux command line or using the instructions with-in the `install.sh` in a python command line.
 
