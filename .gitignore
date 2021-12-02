@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# exclude folders of the following pattern
+*env
+*figures
+*ext
+*.DS_Store
