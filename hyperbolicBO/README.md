@@ -8,6 +8,7 @@ We recommend installing the package in a editable format using the `install.sh` 
 
 1. [Learning hierarchies from Gaussian functions](gaussians.py)
 2. [Learning hierarchies from numerical simulated spectra of nanorods](nanorods.py)
+3. [Comapring performance of different metrics](metrics_compare.py)
 
 To run the case studies use the following steps as a guideline:
 1. Activate the python virtual environment using `source env/bin/activate`
