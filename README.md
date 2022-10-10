@@ -5,4 +5,4 @@ Each paper linked below will have a corresponding folder that can be installed l
 
 # List of papers
 
-1. [On learning material synthesis hierarchies using shape matching on function spaces Kiran Vaddi, Huat T Chiang and Lilo D Pozzo](hyperbolicBO)
+1. 
