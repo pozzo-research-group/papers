@@ -5,4 +5,4 @@ Each paper linked below will have a corresponding folder that can be installed l
 
 # List of papers
 
-1. 
+1. [High-Throughput Workflow for the Synthesis of CdSe Nanocrystals Using a Sonochemical Materials Acceleration Platform](/qdots)
