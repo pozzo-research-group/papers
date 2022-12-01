@@ -3,7 +3,7 @@
 This repository host the supporting code for the following paper (the citation will be updated).
 "Metric geometry tools for automatic structure phase map generation" by Kiran Vaddi, Karen Li, and Lilo D Pozzo.
 
-![autophasemap](./graphical_abstract.pdf "Simple example of autophasemap with Gaussians")
+![autophasemap](./graphical_abstract.png "Simple example of autophasemap with Gaussians")
 
 The installation instruction are below for a cluster computer but there are the same for a local computer.
 The main difference is that on a cluster computer you need to explicitly load the module `gcc` which would be readily available on your Mac/Windows/Linux OS systems.
