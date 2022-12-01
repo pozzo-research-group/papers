@@ -6,3 +6,4 @@ Each paper linked below will have a corresponding folder that can be installed l
 # List of papers
 
 1. [High-Throughput Workflow for the Synthesis of CdSe Nanocrystals Using a Sonochemical Materials Acceleration Platform](/qdots)
+2. [Metric geometry tools for automatic structure phase map generation](/autophasemap)
