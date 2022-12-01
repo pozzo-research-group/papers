@@ -1,14 +1,14 @@
 #!/bin/bash
 
 #SBATCH --job-name=blends
-#SBATCH --account=cheme
-#SBATCH --partition=compute
+#SBATCH --account=<account_name>
+#SBATCH --partition=<partition_name>
 #SBATCH --nodes=16
 #SBATCH --time=5:00:00
 #SBATCH --mem=128G
-#SBATCH --output=./hyak/blends_pred.out
-#SBATCH --error=./hyak/blends_err.out
-#SBATCH --mail-user=kiranvad@uw.edu
+#SBATCH --output=./blends_pred.out
+#SBATCH --error=./blends_err.out
+#SBATCH --mail-user=<your_email_id>@domain.com
 #SBATCH --mail-type=END
 #SBATCH --export=all
 #SBATCH --exclusive
@@ -64,6 +64,6 @@ done
 ##############################################################################################
 
 echo "Launch Python job"
-python3 -u ./OMIECS/run_WSCP_P123_NOpH.py > ./hyak/blends_logging.out
+python3 -u ./OMIECS/run_WSCP_P123_NOpH.py > ./blends_logging.out
 echo "All Done!"
 exit

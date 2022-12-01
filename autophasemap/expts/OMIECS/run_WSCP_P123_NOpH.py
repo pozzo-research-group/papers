@@ -3,19 +3,10 @@
 
 """ Compute phase map of polymer blend data
 
-Change log:
------------
-
-10/18 12:02 AM : Initial run setup with 4 clusters
-
-10/18 3:45 AM : run with 8 clusters
-
-10/19 12:27 AM : 8 seems too many and 6 might be the right one?
-
-10/19 10:48 PM : Something with the installation is broke
-                
-
-
+To run in this file, change the following:
+1. Identify a directory where to store data (see SAVE_DIR in #19)
+2. Specify number of clusters (see n_clusters in #27)
+3. Change the rows and columns of subplots in #28
 """
 
 import numpy as np
@@ -50,6 +41,21 @@ print('Avaiable CPUS : ', ray.available_resources()['CPU'])
 
 class DataSet:
     def __init__(self, C, q, Iq, N, n_domain=200):
+        """ Dataset object for autophasemap with SAXS.
+
+        Parameters:
+        ===========
+        C : numpy array of shape (N, dim)
+            Cartesian coordinates of the design space
+        q : numpy array of shape (n_domain, )
+            q-vector sampling 
+        Iq : numpy array of shape (N, n_domain)
+            Intensity as a function of q
+        N : int
+            Number of samples 
+        n_domain : int
+            Number of discrete samples of the domain q      
+        """
         self.n_domain = n_domain
         self.t = np.linspace(0,1, num=self.n_domain)
         self.N = N
@@ -58,6 +64,17 @@ class DataSet:
         self.q = q
         
     def generate(self, process=None):
+        """ Generate the data into an acceptable form by autophasemap.
+
+        Parameters:
+        ===========
+        process : string
+            "normalize" : Normalizes each function to have L2 norm=1
+            "smoothen" : Normalize and smoothen each function
+            None : Use the data as is
+     
+        """
+        
         if process=="normalize":
             self.F = [self.Iq[i]/self.l2norm(self.Iq[i]) for i in range(self.N)]
         elif process=="smoothen":
@@ -68,6 +85,19 @@ class DataSet:
         return
         
     def l2norm(self, f):
+        """ Compute L2 norm of a function.
+
+        Parameters:
+        ===========
+        f : numpy array of shape (n_domain, )
+            Discrete evaluation of function at the domain q
+        
+        Return:
+        ======
+        norm : float
+            L2 norm of the function       
+        
+        """
         norm = np.sqrt(np.trapz(f**2, data.t))
         
         return norm
@@ -76,6 +106,7 @@ class DataSet:
         f_hat = savgol_filter(f, 8, 3)
         
         return f_hat
+    
 
 saxs = np.load('./OMIECS/blends_WSCP_P123_NOpH.npz')
 

@@ -7,26 +7,9 @@ This file performs elastic kmeans algorithm to learn templates to identify
 phase maps given a set of spectra
 
 To run in this file, change the following:
-1. Identify a directory where to store data (see SAVE_DIR in #28)
-2. Specify number of clusters (see n_clusters in #65)
-3. Change the rows and columns of subplots in #420
-
-Change log:
------------
-
-10/13 1:52 AM : Run with Max clusters to be 4 based on the new BIC run
-                Use Temperature threhsold for 85º 
-                
-10/13 5:31 AM : Run with Max clusters to be 8 and add savefiles with cluster
-                numbers as suffix , remove extra imports (plotting error)
-                
-10/16 10:30 PM : Run with Max clusters to be 4 and add savefiles with cluster
-                numbers as suffix , fix plotting error               
-                               
-
-10/17 12:01 AM : Run with smoothening parameter on for 4 clusters
-                  
-10/17 1:32 AM : Run with smoothening parameter on for 8 clusters
+1. Identify a directory where to store data (see SAVE_DIR in #23)
+2. Specify number of clusters (see n_clusters in #31)
+3. Change the rows and columns of subplots in #32
 
 """
 
@@ -62,6 +45,21 @@ print('Avaiable CPUS : ', ray.available_resources()['CPU'])
 
 class DataSet:
     def __init__(self, C, q, Iq, N, n_domain=200):
+        """ Dataset object for autophasemap with SAXS.
+
+        Parameters:
+        ===========
+        C : numpy array of shape (N, dim)
+            Cartesian coordinates of the design space
+        q : numpy array of shape (n_domain, )
+            q-vector sampling 
+        Iq : numpy array of shape (N, n_domain)
+            Intensity as a function of q
+        N : int
+            Number of samples 
+        n_domain : int
+            Number of discrete samples of the domain q      
+        """
         self.n_domain = n_domain
         self.t = np.linspace(0,1, num=self.n_domain)
         self.N = N
@@ -70,6 +68,17 @@ class DataSet:
         self.q = q
         
     def generate(self, process=None):
+        """ Generate the data into an acceptable form by autophasemap.
+
+        Parameters:
+        ===========
+        process : string
+            "normalize" : Normalizes each function to have L2 norm=1
+            "smoothen" : Normalize and smoothen each function
+            None : Use the data as is
+     
+        """
+        
         if process=="normalize":
             self.F = [self.Iq[i]/self.l2norm(self.Iq[i]) for i in range(self.N)]
         elif process=="smoothen":
@@ -80,6 +89,19 @@ class DataSet:
         return
         
     def l2norm(self, f):
+        """ Compute L2 norm of a function.
+
+        Parameters:
+        ===========
+        f : numpy array of shape (n_domain, )
+            Discrete evaluation of function at the domain q
+        
+        Return:
+        ======
+        norm : float
+            L2 norm of the function       
+        
+        """
         norm = np.sqrt(np.trapz(f**2, data.t))
         
         return norm
@@ -88,6 +110,7 @@ class DataSet:
         f_hat = savgol_filter(f, 8, 3)
         
         return f_hat
+    
 
 saxs = np.load('./OMIECS/PPBT_0_P123_Y_Temp.npz')
 

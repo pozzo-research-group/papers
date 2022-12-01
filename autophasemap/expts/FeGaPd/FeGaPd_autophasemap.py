@@ -2,10 +2,6 @@
 # coding: utf-8
 
 """ Compute phase map given a set of spectra and required number of phases
-
-Change log:
-
-10/11 9:40 PM : Fix smoothening after normalization, fix python issue on Hyak
 """
 
 import numpy as np
@@ -64,6 +60,14 @@ print('Avaiable CPUS : ', ray.available_resources()['CPU'])
 
 class DataSet:
     def __init__(self, C, q, Iq, N, n_domain=200):
+        """ DataSet object for the XRD case study.
+
+            C  : Composition as a numpy array of (n_samples, 3)
+            q : q angle vector of the data as a numpy array of shape (n_domain, )
+            Iq : Intensity as a function of q (numpy array of shape (n_samples, n_domain))
+            N : Number of samples (int)
+            n_domain : Number of samples in the q domain (int)
+        """
         self.n_domain = n_domain
         self.t = np.linspace(0,1, num=self.n_domain)
         self.N = N
@@ -72,19 +76,44 @@ class DataSet:
         self.q = q
         
     def generate(self, normalize=True):
+        """Generate data for autophasemap algorithm
+        
+        normalize : Whetehr to L2-normalize the functional data (bool, default: True)
+        """
         if normalize:
-            self.F = [self._smoothen(self.Iq[i,:]/self.l2norm(self.Iq[i])) for i in range(self.N)]
+            self.F = [self._smoothen(self.Iq[i,:])/self.l2norm(self.Iq[i]) for i in range(N)]
         else:
-            self.F = [self.Iq[i,:] for i in range(self.N)]
+            self.F = [self.Iq[i,:] for i in range(N)]
             
         return
     
     def _smoothen(self, f):
+        """Compute a Savitsky-Golay filtering of the data
+        Inputs:
+        =======
+            f : function values at the discrete sample along the domain
+        
+        returns:
+        ========
+            f_hat : Smoothened function values
+        """
         f_hat = savgol_filter(f, 51, 3)
         
         return f_hat
     
     def l2norm(self, f):
+        """Compute L2-norm of functions
+        
+        Inputs:
+        =======
+            f : numpy array of shape (n_domain, )
+                function values at the discrete sample along the domain
+        
+        returns:
+        ========
+            norm : float 
+                Norm of the function
+        """
         norm = np.sqrt(np.trapz(f**2, data.t))
         
         return norm

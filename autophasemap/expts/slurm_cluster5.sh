@@ -1,14 +1,14 @@
 #!/bin/bash
 
 #SBATCH --job-name=cluster5
-#SBATCH --account=cheme
-#SBATCH --partition=compute
+#SBATCH --account=<account_name>
+#SBATCH --partition=<partition_name>
 #SBATCH --nodes=16
 #SBATCH --time=5:00:00
 #SBATCH --mem=128G
-#SBATCH --output=./hyak/cluster5_pred.out
-#SBATCH --error=./hyak/cluster5_err.out
-#SBATCH --mail-user=kiranvad@uw.edu
+#SBATCH --output=./blends_pred.out
+#SBATCH --error=./blends_err.out
+#SBATCH --mail-user=<your_email_id>@domain.com
 #SBATCH --mail-type=END
 #SBATCH --export=all
 #SBATCH --exclusive
