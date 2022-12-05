@@ -1,7 +1,18 @@
 ## Automatic Structure Phase Map (autophasemap) generation
 
-This repository host the supporting code for the following paper (the citation will be updated).
+This repository host the supporting code for the following paper.
 "Metric geometry tools for automatic structure phase map generation" by Kiran Vaddi, Karen Li, and Lilo D Pozzo.
+
+```bibtex
+ @article{autophasemap, 
+ 	place={Cambridge}, 
+ 	title={Metric geometry tools for automatic structure phase map generation}, 
+ 	DOI={10.26434/chemrxiv-2022-3p4gx}, 
+ 	journal={ChemRxiv}, 
+ 	publisher={Cambridge Open Engage}, 
+ 	author={Vaddi, Kiran and Li, Karen and Pozzo, Lilo D}, year={2022}} 
+ 	This content is a preprint and has not been peer-reviewed.
+```
 
 <img src="./graphical_abstract.png" alt="Simple example of autophasemap with Gaussians"/>
 
@@ -42,6 +53,8 @@ Finally, the `autophasemap` can be installed using:
 ```bash
 pip install -e .
 ```
+
+A simple example using a synthetic Gaussian functions as an example can be found in [this notebok]('/expts/Gaussians/gaussian_peaks.ipynb')
 
 ## Guide to access data and notebooks for case studies in the paper
 
