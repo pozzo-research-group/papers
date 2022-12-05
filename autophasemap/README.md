@@ -54,7 +54,7 @@ Finally, the `autophasemap` can be installed using:
 pip install -e .
 ```
 
-A simple example using a synthetic Gaussian functions as an example can be found in [this notebok]('/expts/Gaussians/gaussian_peaks.ipynb')
+A simple example using a synthetic Gaussian functions as an example can be found in [this notebok]('expts/Gaussians/gaussian_peaks.ipynb'). This example can be run on your local machine once the `autophasemap` package is installed using the similar instructions as above.
 
 ## Guide to access data and notebooks for case studies in the paper
 
@@ -63,15 +63,15 @@ We have generated the expertimental data ourselves via a combination of Federal 
 
 We proivde python and slurm scipts used to produce the results in `/expts/` folder and the visualization scripts in `/postprocess/`.
 
-1. [SAXS case study of pluronics with varying temperature]('/postprocess/P123_Temp/')
+1. [SAXS case study of pluronics with varying temperature]('postprocess/P123_Temp/')
 	- This folder contains the guidelines to access and rerproduce the plots (Figure 3, 4, 5).
 	- Python scripts to reproduce the results on a cluster computer are provided in `/expts/OMIECS/PPBT_0_P123_Y_Temp.py` and the respective slurm batch script in `/expts/slurm_FePdGa.sh`
 	
-2. [XRD case study on a benchmark system]('/postprocess/FeGaPd')
+2. [XRD case study on a benchmark system]('postprocess/FeGaPd')
 	- This folder contains the guidelines to access and rerproduce the plots (Figure 6).
 	- Python scripts to reproduce the results on a cluster computer are provided in `/expts/FeGaPd/FeGaPd_autophasemap.py` and the respective slurm batch script in `/expts/FeGaPd/slurm_blends.sh`	
 	
-3. [SAXS case study of polymer blends of pluronics and conjugated polymers]('/postprocess/WSCP_P123_NOpH')
+3. [SAXS case study of polymer blends of pluronics and conjugated polymers]('postprocess/WSCP_P123_NOpH')
 	- This folder contains the guidelines to access and rerproduce the plots (Figure 7).
 	- Python scripts to reproduce the results on a cluster computer are provided in `/expts/OMIECS/run_WSCP_p123_NOpH.py` and the respective slurm batch script in `/expts/slurm_blends.sh`
 
