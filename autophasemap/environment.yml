@@ -1,0 +1,15 @@
+name: elastic_kmeans
+channels:
+  - conda-forge
+dependencies:
+  - matplotlib>=3.3.4
+  - numpy>=1.18.1
+  - pip
+  - python=3.8
+  - scikit-learn>=0.22.1
+  - scipy>=1.4.1
+  - pip:
+    - ray==1.13.0
+    - pygsp==0.5.1
+    - ortools>=9.4.1874
+  
