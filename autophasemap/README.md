@@ -4,8 +4,8 @@ This repository host the supporting code for the following paper.
 "Metric geometry tools for automatic structure phase map generation" by Kiran Vaddi, Karen Li, and Lilo D Pozzo.
 
 ```bibtex
- @article{autophasemap, 
- 	place={Cambridge}, 
+@article{autophasemap, 
+	place={Cambridge}, 
  	title={Metric geometry tools for automatic structure phase map generation}, 
  	DOI={10.26434/chemrxiv-2022-3p4gx}, 
  	journal={ChemRxiv}, 
