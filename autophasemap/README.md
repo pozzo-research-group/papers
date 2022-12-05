@@ -54,7 +54,7 @@ Finally, the `autophasemap` can be installed using:
 pip install -e .
 ```
 
-A simple example using a synthetic Gaussian functions as an example can be found in [this notebok]('expts/Gaussians/gaussian_peaks.ipynb'). This example can be run on your local machine once the `autophasemap` package is installed using the similar instructions as above.
+A simple example using a synthetic Gaussian functions as an example can be found in [this notebok](expts/Gaussians/gaussian_peaks.ipynb). This example can be run on your local machine once the `autophasemap` package is installed using the similar instructions as above.
 
 ## Guide to access data and notebooks for case studies in the paper
 
