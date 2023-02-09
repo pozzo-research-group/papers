@@ -37,7 +37,7 @@ You need to install the following:
 pip install numpy Cython cffi
 ```
 
-Load the gcc module
+Load the gcc module if you are using this on a cluster computer otherwise move to the next step.
 ```bash
 module load gcc
 ```
