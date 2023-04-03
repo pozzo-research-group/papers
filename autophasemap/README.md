@@ -61,7 +61,7 @@ A simple example using a synthetic Gaussian functions as an example can be found
 In the paper, there are three case studies (two with SAXS and one with XRD). The data for XRD has been kindly provided to us by [Gilad Kusne](https://www.nist.gov/people/aaron-gilad-kusne).
 We have generated the expertimental data ourselves via a combination of Federal grants acknowledged in the original paper.
 
-We proivde python and slurm scipts used to produce the results in `/expts/` folder and the visualization scripts in `/postprocess/`.
+We proivde python and slurm scipts used to produce the results in `/expts/` folder and the visualization scripts with the converged data in `/postprocess/`.
 
 1. [SAXS case study of pluronics with varying temperature](postprocess/P123_Temp/)
 	- This folder contains the guidelines to access and rerproduce the plots (Figure 3, 4, 5).
@@ -75,7 +75,7 @@ We proivde python and slurm scipts used to produce the results in `/expts/` fold
 	- This folder contains the guidelines to access and rerproduce the plots (Figure 7).
 	- Python scripts to reproduce the results on a cluster computer are provided in `/expts/OMIECS/run_WSCP_p123_NOpH.py` and the respective slurm batch script in `/expts/slurm_blends.sh`
 
-All the notebooks and python scripts are annotated with comments to describe the nature of computation and usage.
+All the notebooks and python scripts are annotated with comments to describe the nature of computation and usage. Fell free to open an issue if any of the files do not work as expected or any content is unclear.
 
 
 
