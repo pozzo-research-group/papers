@@ -66,10 +66,12 @@ We proivde python and slurm scipts used to produce the results in `/expts/` fold
 1. [SAXS case study of pluronics with varying temperature](postprocess/P123_Temp/)
 	- This folder contains the guidelines to access and rerproduce the plots (Figure 3, 4, 5).
 	- Python scripts to reproduce the results on a cluster computer are provided in `/expts/OMIECS/PPBT_0_P123_Y_Temp.py` and the respective slurm batch script in `/expts/slurm_FePdGa.sh`
+	- Jupyter notebook to visualize manually annotations can be accessed at `/postprocess/P123_Temp/manual`
 	
 2. [XRD case study on a benchmark system](postprocess/FeGaPd)
 	- This folder contains the guidelines to access and rerproduce the plots (Figure 6).
 	- Python scripts to reproduce the results on a cluster computer are provided in `/expts/FeGaPd/FeGaPd_autophasemap.py` and the respective slurm batch script in `/expts/FeGaPd/slurm_blends.sh`	
+
 	
 3. [SAXS case study of polymer blends of pluronics and conjugated polymers](postprocess/WSCP_P123_NOpH)
 	- This folder contains the guidelines to access and rerproduce the plots (Figure 7).
