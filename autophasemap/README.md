@@ -37,7 +37,7 @@ You need to install the following:
 pip install numpy Cython cffi
 ```
 
-Load the gcc module
+Load the gcc module if you are using this on a cluster computer otherwise move to the next step.
 ```bash
 module load gcc
 ```
@@ -61,21 +61,23 @@ A simple example using a synthetic Gaussian functions as an example can be found
 In the paper, there are three case studies (two with SAXS and one with XRD). The data for XRD has been kindly provided to us by [Gilad Kusne](https://www.nist.gov/people/aaron-gilad-kusne).
 We have generated the expertimental data ourselves via a combination of Federal grants acknowledged in the original paper.
 
-We proivde python and slurm scipts used to produce the results in `/expts/` folder and the visualization scripts in `/postprocess/`.
+We proivde python and slurm scipts used to produce the results in `/expts/` folder and the visualization scripts with the converged data in `/postprocess/`.
 
 1. [SAXS case study of pluronics with varying temperature](postprocess/P123_Temp/)
 	- This folder contains the guidelines to access and rerproduce the plots (Figure 3, 4, 5).
 	- Python scripts to reproduce the results on a cluster computer are provided in `/expts/OMIECS/PPBT_0_P123_Y_Temp.py` and the respective slurm batch script in `/expts/slurm_FePdGa.sh`
+	- Jupyter notebook to visualize manually annotations can be accessed at `/postprocess/P123_Temp/manual`
 	
 2. [XRD case study on a benchmark system](postprocess/FeGaPd)
 	- This folder contains the guidelines to access and rerproduce the plots (Figure 6).
 	- Python scripts to reproduce the results on a cluster computer are provided in `/expts/FeGaPd/FeGaPd_autophasemap.py` and the respective slurm batch script in `/expts/FeGaPd/slurm_blends.sh`	
+
 	
 3. [SAXS case study of polymer blends of pluronics and conjugated polymers](postprocess/WSCP_P123_NOpH)
 	- This folder contains the guidelines to access and rerproduce the plots (Figure 7).
 	- Python scripts to reproduce the results on a cluster computer are provided in `/expts/OMIECS/run_WSCP_p123_NOpH.py` and the respective slurm batch script in `/expts/slurm_blends.sh`
 
-All the notebooks and python scripts are annotated with comments to describe the nature of computation and usage.
+All the notebooks and python scripts are annotated with comments to describe the nature of computation and usage. Fell free to open an issue if any of the files do not work as expected or any content is unclear.
 
 
 
