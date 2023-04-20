@@ -66,7 +66,7 @@ We proivde python and slurm scipts used to produce the results in `/expts/` fold
 1. [SAXS case study of pluronics with varying temperature](postprocess/P123_Temp/)
 	- This folder contains the guidelines to access and rerproduce the plots (Figure 3, 4, 5).
 	- Python scripts to reproduce the results on a cluster computer are provided in `/expts/OMIECS/PPBT_0_P123_Y_Temp.py` and the respective slurm batch script in `/expts/slurm_FePdGa.sh`
-	- Jupyter notebook to visualize manually annotations can be accessed at `/postprocess/P123_Temp/manual`
+	- Jupyter notebook to code used to manually annotations can be accessed at `/postprocess/P123_Temp/manual/Indexing.ipynb` and the code to reproduce the phase diagram in Figure 4 of the manuscript in `/postprocess/P123_Temp/manual/manual_annotation.ipynb`
 	
 2. [XRD case study on a benchmark system](postprocess/FeGaPd)
 	- This folder contains the guidelines to access and rerproduce the plots (Figure 6).
