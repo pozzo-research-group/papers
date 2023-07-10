@@ -3,7 +3,7 @@
 This repository contains the code and data for the above-mentioned paper. This includes UV-Vis spectra, SAXS scattering curves, TEM images, code for the gaussian process classifier, the distance metric, and all other information. 
 
 
-<img src= "/Figures/data_driven_exploration.png" width = "700" />
+<img src= "Figures/data_driven_exploration.png" width = "700" />
 
 
 ### Organization of the Files and Folders
