@@ -2,9 +2,9 @@
 
 This repository contains the code and data for the above-mentioned paper. This includes UV-Vis spectra, SAXS scattering curves, TEM images, code for the gaussian process classifier, the distance metric, and all other information. 
 
-
-<img src= "Figures/data_driven_exploration.png" width = "700" />
-
+<p align="center">
+  <img src= "Figures/data_driven_exploration.png" width = "700" />
+</p>
 
 ### Organization of the Files and Folders
 In this repository there are four folders, each folder has sub-folders contained data, code, or figures. The files and folders labeled "Shape Exploration" refer to the first part of the paper where the objective was to determine what experimental design parameters lead to plate-like particles. The ones labeled "Size Exploration" refer to the second part of the paper where the objective was to determine how the experimental design parameters affect the size and polydispersity of the plates. The files and folders are organized in the following way: (Folders are in **bold**)
