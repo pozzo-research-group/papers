@@ -7,7 +7,7 @@ This repository contains the code and data for the above-mentioned paper. This i
 </p>
 
 ### Organization of the Files and Folders
-In this repository there are four folders, each folder has sub-folders contained data, code, or figures. The files and folders labeled "Fast Spectroscopic Exploration" refer to the first part of the paper where the objective was to determine what experimental design parameters lead to plate-like particles. The ones labeled "SAXS Structural Exploration" refer to the second part of the paper where the objective was to determine how the experimental design parameters affect the size and polydispersity of the plates. The files and folders are organized in the following way: (Folders are in **bold**)
+In this repository there are four folders, each folder has sub-folders that contains data, code, or figures. The files and folders labeled "Fast Spectroscopic Exploration" refer to the first part of the paper where the objective was to determine what experimental design parameters lead to plate-like particles. The ones labeled "SAXS Structural Exploration" refer to the second part of the paper where the objective was to determine how the experimental design parameters affect the size and polydispersity of the plates. The files and folders are organized in the following way: (Folders are in **bold**)
 
 - **Figures:** This folder contains all the figures used in the paper
 - **Notebooks:** This folder contains the code used in the paper, which were written in jupyter notebooks. The notebooks are:
@@ -25,7 +25,7 @@ In this repository there are four folders, each folder has sub-folders contained
   - **SAXS:** Contains all the SAXS related data 
     - **Data:** Contains the SAXS data in .DAT format. Each file contains the data for a single sample from 137 of the samples that were classified as plates from Fast Spectroscopic Exploration. The first column in the file is the scattering vector ,q, in units of inverse angstrom, the second column in the intensity in arbitrary units, and the thrid column is the uncertainty. 
     - **Fits:** Contains images of the fits of all the data using either a polydisperse plate model or a plate and sphere model
-    - Volumes_and_Structure.xlsx: An excel sheet that contains the name of each sample, the volumes used to create the sample in microliters, the structural parameters of each sample determined by SAXS in nanometers (P_length, P_radius, S_radius) and unitless (P_radius_PD, P_scale, S_scale), and the peak wavelength of each sample determined by UV-vis in nanometers. This folder only contains the samples that were classified as plates. 
+    - Volumes_and_Structure.xlsx: An excel sheet that contains the name of each sample (A1, A2, A3, ...), the volumes used to create the sample in microliters, the structural parameters of each sample determined by SAXS in nanometers (P_length, P_radius, S_radius) and unitless (P_radius_PD, P_scale, S_scale) (P stants for Plate and S stands for Sphere), and the peak wavelength position of each sample determined by UV-vis in nanometers. This folder only contains the samples that were classified as plates which were determined by their UV-Vis spectra. 
   - **TEM:** Contains images of the nanoparticles
     - **Plate_Sample:** Contains images of the sample that was fit using the polydisperse plate SAXS model
     - **Plate_and_Sphere_Sample:** Contains images of the sample that was fit using the polydisperse plate and sphere SAXS model
