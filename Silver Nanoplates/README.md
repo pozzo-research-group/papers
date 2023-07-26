@@ -27,8 +27,7 @@ In this repository there are four folders, each folder has sub-folders that cont
     - **Fits:** Contains images of the fits of all the data using either a polydisperse plate model or a plate and sphere model
     - Volumes_and_Structure.xlsx: An excel sheet that contains the name of each sample (A1, A2, A3, ...), the volumes used to create the sample in microliters, the structural parameters of each sample determined by SAXS in nanometers (P_length, P_radius, S_radius) and unitless (P_radius_PD, P_scale, S_scale) (P stants for Plate and S stands for Sphere), and the peak wavelength position of each sample determined by UV-vis in nanometers. This folder only contains the samples that were classified as plates, as determined by their UV-Vis spectra. 
   - **TEM:** Contains images of the nanoparticles
-    - **Plate_Sample:** Contains images of the sample that was fit using the polydisperse plate SAXS model
-    - **Plate_and_Sphere_Sample:** Contains images of the sample that was fit using the polydisperse plate and sphere SAXS model
+    - **Plate_Sample:** Contains microscopy images of the sample that was fit using the polydisperse plate SAXS model
 
 
 ### Requirements
