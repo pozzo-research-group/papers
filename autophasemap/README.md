@@ -16,43 +16,7 @@ This repository host the supporting code for the following paper.
 
 <img src="./graphical_abstract.png" alt="Simple example of autophasemap with Gaussians"/>
 
-The installation instruction are below for a cluster computer but there are the same for a local computer.
-The main difference is that on a cluster computer you need to explicitly load the module `gcc` which would be readily available on your Mac/Windows/Linux OS systems.
-
-## Installing environment on cluster computer
-
-```bash
-conda env create --prefix ~/<your_username>/envs/elastic_kmeans --file environment.yml
-```
-
-And activate it using:
-
-```bash
-conda activate elastic_kmeans
-```
-
-You need to install the following:
-
-```bash
-pip install numpy Cython cffi
-```
-
-Load the gcc module if you are using this on a cluster computer otherwise move to the next step.
-```bash
-module load gcc
-```
-
-And then install the warping package using git : 
-
-```bash
-pip install git+https://github.com/kiranvad/warping.git
-```
-
-Finally, the `autophasemap` can be installed using:
-
-```bash
-pip install -e .
-```
+Please see the INSTALL.md file for detailed instructions.
 
 A simple example using a synthetic Gaussian functions as an example can be found in [this notebok](expts/Gaussians/gaussian_peaks.ipynb). This example can be run on your local machine once the `autophasemap` package is installed using the similar instructions as above.
 
@@ -64,6 +28,7 @@ We have generated the expertimental data ourselves via a combination of Federal 
 We proivde python and slurm scipts used to produce the results in `/expts/` folder and the visualization scripts with the converged data in `/postprocess/`.
 
 1. [SAXS case study of pluronics with varying temperature](postprocess/P123_Temp/)
+	- This data is generated for a pluronic system ()
 	- This folder contains the guidelines to access and rerproduce the plots (Figure 3, 4, 5).
 	- Python scripts to reproduce the results on a cluster computer are provided in `/expts/OMIECS/PPBT_0_P123_Y_Temp.py` and the respective slurm batch script in `/expts/slurm_FePdGa.sh`
 	- Jupyter notebook to code used to manually annotations can be accessed at `/postprocess/P123_Temp/manual/Indexing.ipynb` and the code to reproduce the phase diagram in Figure 4 of the manuscript in `/postprocess/P123_Temp/manual/manual_annotation.ipynb`
