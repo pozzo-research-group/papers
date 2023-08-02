@@ -39,11 +39,16 @@ We provide Python and Slurm scripts used to produce the results in `/expts/` fol
 
 	
 3. [SAXS case study of polymer blends of pluronic and conjugated polymers](postprocess/WSCP_P123_NOpH)
-	- This dataset is collected for a blend of P123 pluronic block-copolymer and a conjugated homopolymer poly(3-[potassium-4-butanoate]thiophene) (PPBT) co-dissolved in aqueous solutions. The design space consisted of two dimensional weight fractions of the two polymers used. 
+	- This dataset is collected for a blend of P123 pluronic block-copolymer and a conjugated homopolymer poly(3-[potassium-4-butanoate]thiophene) (PPBT) co-dissolved in aqueous solutions. The design space consisted of two-dimensional weight fractions of the two polymers used. 
 	- This folder contains the guidelines to access and re-produce the plots (Figure 7).
 	- Python scripts to reproduce the results on a cluster computer are provided in `/expts/OMIECS/run_WSCP_p123_NOpH.py` and the respective slurm batch script in `/expts/slurm_blends.sh`
 
 All the notebooks and Python scripts are annotated with comments to describe the nature of computation and usage. Feel free to open an issue if any of the files do not work as expected or if any content is unclear.
+
+## Disclaimer
+
+In our experiments with SAXS and XRD data obtained from typical high-throughput systems (data on the order of 100-1000), we observed that existing code to obtain the phase map is extremely slow, so we used parallel computing to speed up the process. 
+We observed runtime on the average of 30-45 minutes with 16 cores working in parallel. We anticipate releasing an updated code that is more efficient to be run on laptop computers soon.   
 
 
 
