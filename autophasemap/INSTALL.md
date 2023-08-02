@@ -1,33 +1,22 @@
 The installation instruction are below for a cluster computer but there are the same for a local computer.
-The main difference is that on a cluster computer you need to explicitly load the module `gcc` which would be readily available on your Mac/Windows/Linux OS systems.
+The main difference is that on a cluster computer you need to explicitly load the module `gcc` which would be readily available on your Mac/Linux OS systems.
+For windows, install the gcc might be tricky. Our suggestion would be to try using [VSCode](https://code.visualstudio.com/docs/cpp/config-mingw).
 
 ## Installing environment on cluster computer
 
+Load the gcc module if you are using this on a cluster computer otherwise move to the next step affter making sure the C/C++ compliers are installed.
 ```bash
-conda env create --prefix ~/<your_username>/envs/elastic_kmeans --file environment.yml
+module load gcc
+```
+
+```bash
+conda env create --prefix ~/ENV_LOCATION/autophasemap --file environment.yml
 ```
 
 And activate it using:
 
 ```bash
-conda activate elastic_kmeans
-```
-
-You need to install the following:
-
-```bash
-pip install numpy Cython cffi
-```
-
-Load the gcc module if you are using this on a cluster computer otherwise move to the next step.
-```bash
-module load gcc
-```
-
-And then install the warping package using git : 
-
-```bash
-pip install git+https://github.com/kiranvad/warping.git
+conda activate autophasemap
 ```
 
 Finally, the `autophasemap` can be installed using:
