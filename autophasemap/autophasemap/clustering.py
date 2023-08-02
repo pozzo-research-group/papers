@@ -123,6 +123,8 @@ def compute_elastic_kmeans(data, n_clusters, max_iter=100, verbose=1, smoothen=T
             numpy array of shape (n_samples, n_templates)
         qik_gam : SRSF functions of the original data. 
             Numpy array of shape (n_samples, n_templates)
+        fik_gam : Template-algined original functional data. 
+            Numpy array of shape (n_samples, n_templates, n_domain)
         delta_n : Array of labels assigning each data point to a template
             List of integer labels of shape (n_sample, )
         d_amplitude : Amplitude distance of each data point to a template
