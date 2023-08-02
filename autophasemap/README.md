@@ -18,7 +18,7 @@ This repository host the supporting code for the following paper.
 
 Please see the INSTALL.md file for detailed instructions.
 
-A simple example using synthetic Gaussian functions as an example can be found in [this notebok](expts/Gaussians/gaussian_peaks.ipynb). This example can be run on your local machine once the `autophasemap` package is installed using similar instructions as above.
+A simple example using synthetic Gaussian functions as an example can be found in [this ](expts/Gaussians/gaussian_peaks.ipynb)notebook. This example can be run on your local machine once the `autophasemap` package is installed using similar instructions as above.
 
 ## Guide to access data and notebooks for case studies in the paper
 
