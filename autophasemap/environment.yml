@@ -17,5 +17,6 @@ dependencies:
     - Cython==0.29.30 
     - cffi==1.15.0 
     - git+https://github.com/kiranvad/warping.git
+    - scikit-learn==0.24.1
 
   
