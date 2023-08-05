@@ -4,7 +4,7 @@ import time, datetime
 from collections import namedtuple
 from sklearn.cluster import KMeans
 from scipy.spatial.distance import cdist 
-from autophasemap import assign_clusters
+from .clustering import assign_clusters
 import numpy as np 
 
 class BaseDataSet(abc.ABC):
