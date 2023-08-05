@@ -1,4 +1,4 @@
-name: elastic_kmeans
+name: autophasemap
 channels:
   - conda-forge
 dependencies:
@@ -12,6 +12,4 @@ dependencies:
     - ray==1.13.0
     - pygsp==0.5.1
     - ortools>=9.4.1874
-    - mpltern==0.5.0
-
   
