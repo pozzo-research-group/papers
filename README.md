@@ -10,3 +10,7 @@ Each paper linked below will have a corresponding folder that can be installed l
 2. [Metric geometry tools for automatic structure phase map generation](/autophasemap) 
 
 	[preprint](https://doi.org/10.26434/chemrxiv-2022-3p4gx)
+
+3. [Data-Driven Exploration of Silver Nanoplate Formation in Multidimensional Chemical Design Spaces](</Silver Nanoplates>)
+
+	[preprint](https://chemrxiv.org/engage/chemrxiv/article-details/64e917eb79853bbd786f2e12)
