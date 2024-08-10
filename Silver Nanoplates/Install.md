@@ -1,5 +1,7 @@
 ## Installation instructions
 
+A Windows operating system was used for the development and testing of the code. 
+
 The easiest way to install this repository is to clone the repository using git:
 
 ```bash
@@ -15,4 +17,4 @@ And activate it using:
 conda activate silverNP
 ```
 
-For code that uses sasmodels (https://github.com/SasView/sasmodels), a copy of the sasmodels folder should be added to the  Silver Nanoplates directory. 
+For notebooks that use sasmodels, it can be downloaded at (https://www.sasview.org/). The downloaded sasmodels folder should be added to the Silver Nanoplates directory. 
