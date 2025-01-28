@@ -1,6 +1,14 @@
 ## Differentiable Self-driving labs : Case studies on seed-mediated AuNP growth
-This directory contains code for reproducing phasemap and retrosynthesis analysis presented in the case studies of differentiable self-driving labs paper.
+This directory contains code for reproducing phasemap and retrosynthesis analysis presented in the case studies of [differentiable self-driving labs paper](https://chemrxiv.org/engage/chemrxiv/article-details/67930f56fa469535b99a0dd1).
 
+### Installation:
+1. Install the `activephasemap` package by following the instructions [here](https://github.com/pozzo-research-group/activephasemap)
+
+2. To run the gradient-based `phasemap` and `retrosynthesis` analysis using the differentiable model, install the following for analysis shape of a spectrum using functional data analysis tools:
+    a. Install Amplitude-Phase distance package from [apdist](https://github.com/kiranvad/Amplitude-Phase-Distance)
+    b. For PyTorch compatiability, install function shape analysis tools from [funcshape](https://github.com/kiranvad/funcshape)
+
+### List of Contents:
 Files and folders are organized as follows:
 
 - `00_synthesis.ipynb` : Python code in a jupyter notebook format to run a pipetting protocol to synthesize AuNP in a well plate.
