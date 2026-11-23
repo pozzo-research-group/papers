@@ -1,31 +1,24 @@
 # Pozzo Group Research Papers
 
-This repository contains collection of code to reproduce case studies or plot from publlished research.
-Each paper linked below will have a corresponding folder that can be installed locally and used to reproduce plots and data from the corresponding paper.
+Index of published papers from the [Pozzo Research Group](https://pozzorg.com) and where their code lives. Folders in this repository (`papers/...`) can be installed locally to reproduce plots and data from the corresponding paper; see each folder's README.
 
-## 2025 
-
-1. [Autonomous phase mapping of gold nanoparticles synthesis with differentiable models of spectral shape](/seed-AuNP-phasemaps/)
-
-	[![arXiv](https://img.shields.io/badge/arXiv-2025.zktwx-b31b1b.svg)](https://doi.org/10.26434/chemrxiv-2025-zktwx) [![DOI](https://img.shields.io/badge/DOI-10.1038/s41524.025.01822.z-blue)](https://www.nature.com/articles/s41524-025-01822-z)	
-
-## 2024
-
-1. [Self-Assembly of a Triblock Copolymer in the Presence of a Rigid Conjugated Polyelectrolyte](/pluronic-phasemaps/)
-
-	[![arXiv](https://img.shields.io/badge/arXiv-2024.s2w98-b31b1b.svg)](https://doi.org/10.26434/chemrxiv-2024-s2w98) [![DOI](https://img.shields.io/badge/DOI-10.1021/acs.macromol.4c02429-blue)](https://pubs.acs.org/doi/10.1021/acs.macromol.4c02429)	
-
-2. [Data-driven exploration of silver nanoplate formation in multidimensional chemical design spaces](/Silver%20Nanoplates/)
-
-	[![arXiv](https://img.shields.io/badge/arXiv-2023.60kd6-b31b1b.svg)](https://doi.org/10.26434/chemrxiv-2023-60kd6) [![DOI](https://img.shields.io/badge/DOI-10.1039/d4dd00211c-blue)](https://pubs.rsc.org/en/content/articlehtml/2024/dd/d4dd00211c)	
-
-## 2023
-
-1. [High-Throughput Workflow for the Synthesis of CdSe Nanocrystals Using a Sonochemical Materials Acceleration Platform](/qdots)
-
-	[![arXiv](https://img.shields.io/badge/arXiv-2023.20wr2-b31b1b.svg)](https://doi.org/10.26434/chemrxiv-2023-20wr2) [![DOI](https://img.shields.io/badge/DOI-10.1039/D3DD00033H-blue)](https://pubs.rsc.org/en/content/articlehtml/2023/dd/d3dd00033h)
-
-2. [Metric geometry tools for automatic structure phase map generation](/autophasemap)
- 
-	[![arXiv](https://img.shields.io/badge/arXiv-2022.3p4gx-b31b1b.svg)](https://doi.org/10.26434/chemrxiv-2022-3p4gx) [![DOI](https://img.shields.io/badge/DOI-10.1039/D3DD00105A-blue)](https://pubs.rsc.org/en/content/articlehtml/2023/dd/d3dd00105a)
-
+| Year | Paper | Journal | DOI | Preprint | Code |
+|---|---|---|---|---|---|
+| 2026 | An automated sampling workflow for parallel long-term membrane diffusion cell testing | *Digital Discovery* | [10.1039/d5dd00523j](https://doi.org/10.1039/d5dd00523j) |  | [OT2-ADT](https://github.com/pozzo-research-group/OT2-ADT) |
+| 2026 | Integrating molecular simulations with experimental characterization using a series alignment algorithm | *Soft Matter* | [10.1039/d6sm00888g](https://doi.org/10.1039/d6sm00888g) |  | [MC-DFM](https://github.com/pozzo-research-group/MC-DFM) |
+| 2026 | Role of Polymer–Protein Interactions in the Dynamics of Polymer-Integrated Protein Crystals | *Journal of the American Chemical Society* | [10.1021/jacs.6c02182](https://doi.org/10.1021/jacs.6c02182) |  | [MC-DFM](https://github.com/pozzo-research-group/MC-DFM) |
+| 2025 | Accelerated sol–gel synthesis of nanoporous silica via integrated small angle X-ray scattering with an open-source automation platform | *Digital Discovery* | [10.1039/d5dd00274e](https://doi.org/10.1039/d5dd00274e) |  | [automated-mesoporous-silica](https://github.com/pozzo-research-group/automated-mesoporous-silica), [Automation-Hardware](https://github.com/pozzo-research-group/Automation-Hardware), [AFL-sample-loader](https://github.com/pozzo-research-group/AFL-sample-loader) |
+| 2025 | Assembly of small silica nanoparticles using lipid-tethered DNA ‘bonds’ | *Soft Matter* | [10.1039/d5sm00924c](https://doi.org/10.1039/d5sm00924c) |  | [silica_lipid_DNA](https://github.com/pozzo-research-group/silica_lipid_DNA), [MC-DFM](https://github.com/pozzo-research-group/MC-DFM) |
+| 2025 | Autonomous phase mapping of gold nanoparticles synthesis with differentiable models of spectral shape | *npj Computational Materials* | [10.1038/s41524-025-01822-z](https://doi.org/10.1038/s41524-025-01822-z) | [chemRxiv](https://doi.org/10.26434/chemrxiv-2025-zktwx) | [papers/seed-AuNP-phasemaps](./seed-AuNP-phasemaps/), [activephasemap](https://github.com/pozzo-research-group/activephasemap) |
+| 2025 | Bond-centric modular design of protein assemblies | *Nature Materials* | [10.1038/s41563-025-02297-5](https://doi.org/10.1038/s41563-025-02297-5) |  | [MC-DFM](https://github.com/pozzo-research-group/MC-DFM) |
+| 2025 | Design of light- and chemically responsive protein assemblies through host-guest interactions | *Chem* | [10.1016/j.chempr.2024.102407](https://doi.org/10.1016/j.chempr.2024.102407) |  | [MC-DFM](https://github.com/pozzo-research-group/MC-DFM) |
+| 2025 | Efficient analysis of small-angle scattering curves for large biomolecular assemblies using Monte Carlo methods | *Journal of Applied Crystallography* | [10.1107/s1600576725003267](https://doi.org/10.1107/s1600576725003267) |  | [MC-DFM](https://github.com/pozzo-research-group/MC-DFM) |
+| 2024 | Data-driven exploration of silver nanoplate formation in multidimensional chemical design spaces | *Digital Discovery* | [10.1039/d4dd00211c](https://doi.org/10.1039/d4dd00211c) | [chemRxiv](https://doi.org/10.26434/chemrxiv-2023-60kd6) | [papers/Silver Nanoplates](./Silver%20Nanoplates/) |
+| 2024 | Self-Assembly of a Triblock Copolymer in the Presence of a Rigid Conjugated Polyelectrolyte | *Macromolecules* | [10.1021/acs.macromol.4c02429](https://doi.org/10.1021/acs.macromol.4c02429) | [chemRxiv](https://doi.org/10.26434/chemrxiv-2024-s2w98) | [papers/pluronic-phasemaps](./pluronic-phasemaps/) |
+| 2023 | A high-throughput workflow for the synthesis of CdSe nanocrystals using a sonochemical materials acceleration platform | *Digital Discovery* | [10.1039/d3dd00033h](https://doi.org/10.1039/d3dd00033h) | [chemRxiv](https://doi.org/10.26434/chemrxiv-2023-20wr2) | [papers/qdots](./qdots/), [OT2-DOE](https://github.com/pozzo-research-group/OT2-DOE), [Automation-Hardware](https://github.com/pozzo-research-group/Automation-Hardware) |
+| 2023 | Anisotropic Gold Nanomaterial Synthesis Using Peptide Facet Specificity and Timed Intervention | *Langmuir* | [10.1021/acs.langmuir.3c01577](https://doi.org/10.1021/acs.langmuir.3c01577) |  | [otto](https://github.com/pozzo-research-group/otto) |
+| 2023 | Metric geometry tools for automatic structure phase map generation | *Digital Discovery* | [10.1039/d3dd00105a](https://doi.org/10.1039/d3dd00105a) | [chemRxiv](https://doi.org/10.26434/chemrxiv-2022-3p4gx) | [papers/autophasemap](./autophasemap/), [autophasemap](https://github.com/pozzo-research-group/autophasemap) |
+| 2022 | Autonomous retrosynthesis of gold nanoparticles via spectral shape matching | *Digital Discovery* | [10.1039/d2dd00025c](https://doi.org/10.1039/d2dd00025c) |  | [HEAD](https://github.com/pozzo-research-group/HEAD), [OT2-DOE](https://github.com/pozzo-research-group/OT2-DOE) |
+| 2022 | Multivariate analysis of peptide-driven nucleation and growth of Au nanoparticles | *Digital Discovery* | [10.1039/d2dd00017b](https://doi.org/10.1039/d2dd00017b) |  | [Automation-Hardware](https://github.com/pozzo-research-group/Automation-Hardware) |
+| 2021 | Blend Morphology in Polythiophene–Polystyrene Composites from Neutron and X-ray Scattering | *Macromolecules* | [10.1021/acs.macromol.0c02512](https://doi.org/10.1021/acs.macromol.0c02512) |  | [c-wolf-blends-morphology](https://github.com/pozzo-research-group/c-wolf-blends-morphology) |
+| 2021 | PhasIR: An Instrumentation and Analysis Software for High-throughput Phase Transition Temperature Measurements | *Journal of Open Hardware* | [10.5334/joh.39](https://doi.org/10.5334/joh.39) |  | [phasIR](https://github.com/pozzo-research-group/phasIR) |
